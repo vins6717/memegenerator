@@ -1,7 +1,12 @@
 import React from 'react';
+import memeGeneratorLogo from '../images/memegeneratorlogo.svg';
 
 export default function Header() {
-    return 
-    <h1></h1>
+    return (
+        <header className="header">
+            <img src={memeGeneratorLogo} className="logo"/>
+            <h2 className="header-text">Meme Generator</h2>
+        </header>
+            )
 
 }
