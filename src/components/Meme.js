@@ -40,9 +40,9 @@ export default function Meme() {
     }
 
     return(
-        <main>
-            <div className="form">
-                <form>
+        <main className="meme-container">
+            <div className="container">
+                <form className="form">
                     <input 
                         type="text" 
                         className="form-input" 
@@ -67,8 +67,8 @@ export default function Meme() {
                 </form>
             </div>
         
-            <div className="meme">
-                <img src={meme.randomImage} className="meme-image"/>
+            <div className="meme full-width">
+                <img src={meme.randomImage} className="meme-image" alt='your-meme-image'/>
                 <h2 className="meme-text top">{meme.topText}</h2>
                 <h2 className="meme-text bottom">{meme.bottomText}</h2>
             </div>
